@@ -4,6 +4,9 @@
   "description": "Read large xml, csv files efficiently",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/retroace/efile-parser"
+  },
   "directories": {
     "test": "tests"
   },
