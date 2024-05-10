@@ -1,7 +1,7 @@
 {
-  "name": "large-xml-iterator",
+  "name": "efile-parser",
   "version": "1.0.0",
-  "description": "Extract out certain portion of xml from a large file or stream.",
+  "description": "Read large xml, csv files efficiently",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
