@@ -39,7 +39,7 @@ export function parseXMLFromState(
     while (content.length) {
       // Navigate upto closing tag
       if (state === XML_STATE.FIND_CLOSING_TAG) {
-        const tagName = lastTagToParse;
+        const tagName = currentPath[currentPath.length - 1];
         const endTagIndex = indexOfEndTag(content, tagName);
         if (endTagIndex === -1) {
           return {
@@ -133,6 +133,7 @@ export function parseXMLFromState(
         }
   
         state = XML_STATE.FIND_CLOSING_TAG;
+        initialPath = initialPath += 
         content = content.substring(skipTagNameIndex);
         continue;
       }
